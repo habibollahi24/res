@@ -1,3 +1,5 @@
+/* Maryam Afshar, Student ID: 301034443, Due Date: October 3, 2023  */
+
 * {
   font-family: "Open Sans";
 }
@@ -53,6 +55,12 @@ body {
 }
 
 /* About Page */
+
+@media screen and (max-width: 800px) {
+  .b-bottom {
+    border-bottom: 1px solid #d8d5d5 !important;
+  }
+}
 
 .about li {
   color: #333;
