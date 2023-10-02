@@ -4,7 +4,49 @@
   <body>
     <%- include('partials/navbar') %>
 
-    <h1 class="text-center p-5">welcome to Home Page</h1>
+    <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center gy-4 py-4">
+        <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+          <img
+            src="/images/developer.JPG"
+            class="d-block mx-lg-auto img-fluid"
+            alt="hero"
+            style="box-shadow: none"
+          />
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <div class="lc-block mb-3">
+            <div editable="rich">
+              <h2 class="fw-bold display-5">
+                Hi , I'm Maryam Afshar Welcome To My Oortfolio
+              </h2>
+            </div>
+          </div>
+
+          <div class="lc-block mb-5">
+            <div editable="rich">
+              <p class="lead">
+                A detailed-oriented and innovative software engineering student
+                with documentation .Design, Development, Testing and Agile
+                skills. strong communication skills with exprients in
+                client-relationship management and team-based project.
+              </p>
+            </div>
+          </div>
+
+          <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
+            <a
+              class="btn btn-primary px-4 me-md-2 btn-prim mb-3"
+              href="/about"
+              role="button"
+              >know Me ..</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer') %>
 
     <script src="/js/bootstrap.min.js" type="text/javascript"></script>
   </body>

@@ -4,7 +4,75 @@
   <body>
     <%- include('partials/navbar') %>
 
-    <h1 class="text-center p-5">welcome to services Page</h1>
+    <div class="container mb-5 pb-5">
+      <div class="text-center mt-5">
+        <h1>My Services</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box">
+            <div class="our-services settings">
+              <div class="icon">
+                <img src="/images/icons/web.png" />
+              </div>
+              <h4>Web Developer</h4>
+              <p>Javascript , css , React , Node , php , python , Next</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <div class="our-services speedup">
+              <div class="icon">
+                <img src="/images/icons/ui.png" />
+              </div>
+              <h4>UI / UX Designer</h4>
+              <p>Illustrator , Photoshop , Figma ,Adobe xd</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <div class="our-services privacy">
+              <div class="icon">
+                <img src="/images/icons/test.png" />
+              </div>
+              <h4>Testing</h4>
+              <p>
+                Unit testing ,Integration testing ,End-to-End testing ,UI/Visual
+                testing
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box">
+            <div class="our-services backups">
+              <div class="icon">
+                <img src="/images/icons/devops.png" />
+              </div>
+              <h4>Devops</h4>
+              <p>Github , documenting , CMS , MS project , MS teams</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <div class="our-services database">
+              <div class="icon">
+                <img src="/images/icons/database.png" />
+              </div>
+              <h4>Database</h4>
+              <p>Mongodb , MySQL , postgresql , Redis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer') %>
 
     <script src="/js/bootstrap.min.js" type="text/javascript"></script>
   </body>

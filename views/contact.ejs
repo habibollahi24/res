@@ -4,8 +4,95 @@
   <body>
     <%- include('partials/navbar') %>
 
-    <h1 class="text-center p-5">welcome to contact Page</h1>
+    <div
+      class="container mt-2 mb-5 pt-4"
+      style="min-height: calc(100vh - 200px)"
+    >
+      <div class="row mt-5 align-items-start">
+        <div class="col-lg-4 p-3" style="height: 100%">
+          <div class="info-contact">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h5>Location:</h5>
+              <p class="contact-desc">Toronto. ON</p>
+            </div>
 
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h5>Email:</h5>
+              <p class="contact-desc">mafshar5@my.centennialcollege.ca</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h5>Call:</h5>
+              <p class="contact-desc">(416) 795-5013</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0">
+          <form
+            role="form"
+            class="php-email-form"
+            onsubmit="alert('Thanks For Your Message')"
+          >
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group mt-3">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+
+            <div class="text-left mt-4">
+              <button
+                type="submit"
+                class="btn btn-primary px-4 me-md-2 btn-prim mb-3"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer') %>
     <script src="/js/bootstrap.min.js" type="text/javascript"></script>
   </body>
 </html>
